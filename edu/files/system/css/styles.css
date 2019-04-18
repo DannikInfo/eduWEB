@@ -1,0 +1,15 @@
+.navfix{
+	background-color: rgb(238, 238, 238);
+}
+.logo{
+	padding:20px; 
+	position: relative;
+	margin-left:calc(50vw - 265px / 2);
+}
+.navRFix{
+	margin-right: 10px;
+	margin-top:0px;
+}
+.passFix{
+	margin-top:-10px;
+}

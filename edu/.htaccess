@@ -1,0 +1,9 @@
+RewriteEngine on
+
+RewriteRule ^books files/pages/books.php [L]
+RewriteRule ^timetable files/pages/time.php [L]
+RewriteRule ^progress files/pages/progress.php [L]
+RewriteRule ^visits files/pages/visits.php [L]
+RewriteRule ^profile files/profile/profile.php [L]
+
+RewriteRule ^adm/(.*)$ /files/admin/admin.php?page=$1  [L,QSA]

@@ -1,0 +1,297 @@
+@font-face{
+font-family: 'OpenSans-Regular';
+src: url('../fonts/OpenSans-Regular.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+@font-face{
+font-family: 'OpenSansCondensed-Bold';
+src: url('../fonts/OpenSansCondensed-Bold.woff') format('woff');
+font-weight: normal;
+font-style: normal;
+}
+#week_1_tab, #week_2_tab{background: white;}
+.page{font-family: times;}
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus{
+    background-color: rgb(76, 108, 191);
+}
+#search_form{
+    position: relative;
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+#search_form > div{
+    display: table-cell;
+}
+#search_form .input-group{
+    width: 100%;
+}
+#search_form .header{
+    margin-bottom: 30px;
+    font-size: 34px;
+    color: #006CB5;
+    font-family: OpenSansCondensed-Bold;
+    letter-spacing: 2px;
+}
+#search_form .row{
+    margin: 0px;
+}
+.form-control.typeahead{
+    height: auto;
+}
+.btn-primary{
+    background-color: #006CB5;
+}
+.timetable .nav > li > a:hover,
+.nav > li > a:focus{
+    outline: none;
+}
+.timetable .nav > li:not(.active) > a:hover{
+    transition: 0.5s;
+    background-color: rgb(126, 148, 231);
+    color: white;
+}
+#timetable_tab .nav > li:not(.active) > a:hover,
+#consultation_tab .nav > li:not(.active) > a:hover{
+    box-shadow: none;
+}
+.abc-red{
+    color: #d50030;
+    text-shadow: 2px 2px 2px #484848;
+}
+.abc-blue{
+    color: #0090cc;
+    text-shadow: 2px 2px 2px #005B81;
+}
+.abc-yellow{
+    color: #ffd300;
+    text-shadow: 2px 2px 2px #A78A00;
+}
+.timetable{padding:20px 0px;}
+.timetable h3{margin: 20px 0px;}
+.timetable.row{margin:0px;}
+.timetable .header{
+    border-bottom: 2px solid;
+    overflow: auto;
+}
+.timetable .header .name >div{
+    background-color: rgb(76, 108, 191);
+    font-weight:bold;
+    color:#FFF;
+    padding: 10px 0px;
+}
+.timetable .header .time,
+.timetable .header .discipline{
+    float: left;
+    padding: 5px 10px;
+}
+.timetable .body{
+    padding: 0px;
+    display: table;
+    width: 100%;
+}
+.timetable .body .time{
+    padding: 5px 10px;
+}
+.timetable .header .time,
+.timetable .body .time{
+    width: 20%;
+    min-width: 80px;
+}
+.timetable .header .time.extra,
+.timetable .body .time.extra{
+    min-width: 140px;
+}
+.timetable .body .discipline a{
+    text-decoration: none !important;
+    color: #666666;
+    outline: none !important;
+}
+.timetable .body .discipline a:hover{
+    color: #000000;
+}
+.timetable .body .discipline .name,
+.timetable .body .time{
+    font-weight: bold;
+}
+.timetable .body .discipline,
+.timetable .body .time{
+    display: table-cell;
+}
+.timetable .body ul{
+    margin: 0px;
+}
+.timetable .body .discipline .row{
+    margin: 0px;
+}
+.timetable .body .discipline .row{
+    border-bottom: 1px solid #e1e1e1;
+}
+.timetable .body .discipline .row > div{
+    padding: 5px 10px;
+}
+.timetable .body .time{
+    vertical-align: middle;
+    font-size: 16px;
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+}
+.timetable .body .line:nth-child(even){
+    background-color: #f2eeee;
+}
+.timetable .body .line{
+    display: table-row;
+}
+.timetable .body .line .fa{
+    margin-right: 5px;
+    color: #b0b0b0;
+}
+.timetable .btn-group{
+    padding:10px;
+}
+.timetable .navbar-right{
+    margin: 0;
+}
+.timetable .tab-content{
+    clear: both;
+}
+.timetable .n_week > li > a {
+    border-radius: 4px 4px 0px 0px;
+}
+.timetable .day{
+    padding-bottom:20px;
+}
+.timetable .discipline .extra,
+.timetable .discipline > .row{
+    min-height: 58px;
+}
+.typeahead.dropdown-menu{
+    width: 100%;
+}
+.typeahead.dropdown-menu > li > a{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.oe_structure.search{
+    color: #000;
+    /*background: linear-gradient(to top, #006CB5 0%, #E4E4D8 45%, #006CB5 90%);*/
+}
+#TabMenuTypeTT{
+    margin-bottom: 20px;
+}
+.empty_info_msg{
+    text-align: center;
+    height: 400px;
+    padding: 40px;
+}
+.empty_info_msg .fa{
+    font-size: 80px;
+    color: #c53131;
+}
+/*Scroll to Top button*/
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    outline: none !important;
+    background-color: #eee;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    opacity: 0.9;
+    text-align: center;
+    z-index: 9999;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 12px 15px;
+}
+.back-to-top .fa{
+    color:#7b7b7b;
+}
+.print_btn{
+    margin:5px 0px;
+}
+/* Today marker*/
+.timetable .badge {
+    background-color: #f00;
+}
+.form-control.typeahead,
+#search_btn.btn,
+.typeahead.dropdown-menu{
+    font-size: 16px;
+    font-family: OpenSans-Regular;
+}
+
+@media (max-width: 320px) {
+    .timetable .header .time,
+    .timetable .body .time{
+        min-width: 65px;
+    }
+    .timetable .body .line .fa{
+        display: none;
+    }
+    .timetable .day{
+        overflow: hidden;
+    }
+    .timetable .body .discipline .row > div{
+        /*padding: 5px 7px;*/
+        max-width: 195px;
+    }
+    .timetable .body .discipline ul > li{
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
+@media (max-width: 768px){
+    .form-control.typeahead,
+    #search_btn.btn,
+    .typeahead.dropdown-menu{
+        font-size: 18px;
+    }
+    .form-control.typeahead,
+    #search_btn.btn{
+        padding: 8px 12px;
+    }
+    #search_btn.btn{
+        width: 220px;
+        margin-top: 40px;
+    }
+    #search_btn.btn .fa{
+        margin-right: 5px;
+    }
+    .form-control.typeahead{
+        border-radius: 4px !important;
+    }
+    .oe_structure.search > .container{
+        height: 400px;
+    }
+    #search_form > div{
+        vertical-align: top;
+    }
+    .timetable .body .time .fa{
+        margin: 0px;
+    }
+}
+@media (min-width: 768px){
+    .oe_structure.search > .container{
+        height: 400px;
+    }
+    #search_form > div{
+        vertical-align: middle;
+    }
+}
+@media (min-width: 992px){
+    .oe_structure.search > .container{
+        height: 600px;
+    }
+    #search_form > div{
+        vertical-align: middle;
+    }
+}
+@media (min-width: 1200px){
+    .oe_structure.search > .container{height: 600px;}
+    #search_form > div{vertical-align: middle;}
+}
